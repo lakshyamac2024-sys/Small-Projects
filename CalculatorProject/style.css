@@ -77,3 +77,16 @@ button.active {
     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 2px 5px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
 }
+
+@media (max-width: 480px) {
+    .calculator {
+        transform: scale(0.75);
+        transform-origin: center center;
+    }
+}
+
+@media (max-width: 380px) {
+    .calculator {
+        transform: scale(0.68);
+    }
+}
