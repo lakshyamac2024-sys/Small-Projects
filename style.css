@@ -24,6 +24,11 @@ body {
     box-shadow: -20px 20px 25px rgba(0 , 0 , 0 ,1);
 }
 
+.calculator div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 input {
     width: 400px;
     background-color: #2B5748;
@@ -80,13 +85,13 @@ button.active {
 
 @media (max-width: 480px) {
     .calculator {
-        transform: scale(0.75);
+        transform: scale(0.72);
         transform-origin: center center;
     }
 }
 
 @media (max-width: 380px) {
     .calculator {
-        transform: scale(0.68);
+        transform: scale(0.62);
     }
 }
