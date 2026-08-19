@@ -71,6 +71,10 @@ button {
     border-radius: 50%;
     box-shadow: 0px 8px 20px rgba(0 , 0 , 0 ,0.8);
     cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent; 
+    outline: none;                            
+    user-select: none;
 }
 #equal {
     background: #9CB080;
