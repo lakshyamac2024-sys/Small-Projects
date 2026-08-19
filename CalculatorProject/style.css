@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f8;
+}
+
+.calculator {
+    border: 2px solid #618764;
+    padding: 20px;
+    border-radius: 15px;
+    background:#273338;
+    box-shadow: -20px 20px 25px rgba(0 , 0 , 0 ,1);
+}
+
+input {
+    width: 400px;
+    background-color: #2B5748;
+    padding: 24px;
+    margin: 10px;
+    border: none;
+    text-align: right;
+    box-shadow: 0 8px 20px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #9CB080;
+}
+.calculator input:focus{
+    outline: none;
+    border: 2px solid #9CB080;
+}
+input::placeholder{
+    color: #9CB080;
+}
+.numbers {
+    color: #9CB080;
+}
+.function {
+    background: #9CB080;
+    color: #273338
+}
+.operators {
+    background: #9CB080;
+    color: #273338
+}
+
+button {
+    border: none;
+    width: 86px;
+    height: 86px;
+    margin: 8px;
+    background: transparent;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 20px rgba(0 , 0 , 0 ,0.8);
+    cursor: pointer;
+}
+#equal {
+    background: #9CB080;
+    color: #273338;
+}
+
+button.active {
+    transform: scale(0.92);
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    input {
+        width: calc(100% - 10px);
+        margin: 5px;
+        padding: 16px;
+        font-size: 36px;
+    }
+
+    button {
+        width: 65px;
+        height: 65px;
+        margin: 4px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    button {
+        width: 55px;
+        height: 55px;
+        margin: 3px;
+        font-size: 20px;
+    }
+}
